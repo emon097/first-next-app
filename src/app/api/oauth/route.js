@@ -13,11 +13,11 @@ export default async (req, res) => {
 
     let url = "https://www.tiktok.com/v2/auth/authorize/";
     // Customize the query parameters based on your needs
-    url += `?client_key=awgp21jt81sy3j1q`;
+    url += `?client_key=aw1r5czwe50oigz9`;
     url +=
       "&scope=user.info.basic,user.info.profile,user.info.stats,video.list";
     url += "&response_type=code";
-    url += `&redirect_uri=http://localhost:3000/redirect`;
+    url += `&redirect_uri=https://first-next-app1.vercel.app/redirect`;
     url += `&state=${csrfState}`;
 
     return NextResponse.json({ url });
