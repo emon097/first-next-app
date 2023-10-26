@@ -7,7 +7,7 @@ const Redirect = () => {
   useEffect(() => {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const code = urlSearchParams.get("code");
-    axios.post("http://localhost:3000/tiktokaccesstoken", {
+    axios.post("https://first-next-app1.vercel.app/api/tiktokaccesstoken", {
       code: code,
     });
   }, []);
